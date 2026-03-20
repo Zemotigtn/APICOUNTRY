@@ -7,17 +7,21 @@ var continentdiv = document.createElement("div");
 
 function search() {
   let textcountry = document.querySelector(".text").value;
+  // console.log(textcountry);
+  
   //   textcountry.innerHTML = `<span>pays</span><br>
   //   <p>${textcountry}</p>`;
 
   let url = "https://restcountries.com/v3.1/name/" + textcountry;
+  // console.log(url);
+  
   fetch(url).then((response) =>
     response.json().then((data) => {
       // console.log(data)
       const country = data[0];
       const capital = country.capital;
       const continent = country.continents;
-      const flag = country.flags.svg;
+      const flag = country.flags.png;
 
       countrydiv.innerHTML = `<span>pays</span><br>
   <p>${textcountry}</p>`;

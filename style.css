@@ -36,7 +36,7 @@ img {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 input {
-    width: calc(100% - 100px);
+    width: 100%;
     padding: 10px;
     outline: 0;
 }
@@ -52,6 +52,8 @@ input , button {
     border: 0;
 }
 
+
+/*concerne le JS*/
 div{
     padding: 20px;
     border: 1px solid #fff;
